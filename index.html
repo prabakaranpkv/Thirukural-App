@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Thirukural</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <img
+        src="https://mk0vinavuu9wl1kmwant.kinstacdn.com/wp-content/uploads/2019/08/Thirukural-Thiruvalluvar-slider.jpg"
+      />
+
+      <h1>Thirukural</h1>
+      <br />
+      <label>Kural Number:</label>
+
+      <input
+        type="number"
+        id="input"
+        placeholder="Enter No"
+        min="1"
+        max="1330"
+      />
+      <p id="err"></p>
+
+      <input type="radio" id="tamil" name="language" value="tamil" checked />
+      <label for="tamil">Tamil</label>
+      <input type="radio" id="english" name="language" value="english" />
+      <label for="english">English</label><br /><br />
+      <button type="submit" id="btn" class="btn btn-primary" onclick="get()">
+        Enter</button
+      ><br /><br />
+      <div id="content">
+        <p class="inf" id="number"></p>
+        <p class="inf" id="chap_tam"></p>
+        <p class="inf" id="chapgrp_tam"></p>
+        <p class="inf" id="sect_tam"></p>
+        <p id="kural"></p>
+        <p id="line1"></p>
+
+        <p id="exp"></p>
+        <p id="tam_exp"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
